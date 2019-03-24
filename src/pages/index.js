@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
-import Layout from '../components/Layout/'
-import MainSection from '../components/mainSection/'
+import Main from '../components/Main/'
+import Pricing from '../components/Pricing/'
+import ContactForm from '../components/ContactForm/'
+
 class index extends Component {
     render() {
         return (
             <>
-                <MainSection/>
+                <Main/>
                 <section>
                     service
                 </section>
                 <section>
                     portfolio
                 </section>
-                <section>
-                    pricing
-                </section>
+                <Pricing/>
+                <ContactForm/>
             </>
         );
     }
