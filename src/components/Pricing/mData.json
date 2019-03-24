@@ -1,0 +1,17 @@
+[{
+    "title": "basic",
+    "subtitle": "lorem ipsum",
+    "price": "10",
+    "features": ["Lorem Ipsum", "Omnis iste natus", "At vero accusamus", "Nam libero tempore"]
+},{
+    "title": "pronze",
+    "subtitle": "lorem ipsum",
+    "price": "10",
+    "features": ["Lorem Ipsum", "Omnis iste natus", "At vero accusamus", "Nam libero tempore"]
+}, {
+
+    "title": "gold",
+    "subtitle": "lorem ipsum",
+    "price": "10",
+    "features": ["Lorem Ipsum", "Omnis iste natus", "At vero accusamus", "Nam libero tempore"]
+}]
