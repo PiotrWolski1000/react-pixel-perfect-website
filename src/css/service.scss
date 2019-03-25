@@ -1,0 +1,46 @@
+.service {
+    width: 100%;
+    // min-height: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.service__container {
+    display: block;
+    max-width: 942px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service__path__crosser {
+    width: 654px;
+    height: 96px;
+    position: relative;
+    bottom: 20px; 
+}
+
+.service__feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
+
+}
+
+.service__feature__text {
+    width: 288px;
+    font-family: "Myriad Pro";
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #9aa0a8;
+}
