@@ -3,7 +3,6 @@ import './../../css/shared.scss'
 import './../../css/portfolio.scss'
 import  {gallery} from './gallery.js'
 
-// import '/images/portfolio/1/large.jpg'
 
 const index = () => {
     return (
@@ -14,16 +13,19 @@ const index = () => {
             <div className="portfolio__grid__container">
                 {gallery.map((item, i)=>{
                     return(
-                        <div key={`grid_item_wrapper_${i}`}>
+                        <div className = "grid__item__wrapper" key={`grid_item_wrapper_${i}`}>
                             <img 
+                                className="grid__image"
                                 key={`grid_item_${i}`}
                                 src={item.small} 
-                                srcSet={`${item.small} 942w, ${item.medium} 1440w, ${item.large} 1920w`}
-                                // width='50' 
-                                // height="50" 
+                                srcSet={`${item.small} 326w, ${item.medium} 651, ${item.large} 977w`}
                                 alt="alt"
-                                className="grid__item"
                             />
+
+                            <div className="grid__image__hover">
+                                <p>project title</p>
+                                <div className="grid__hover__plus"> + </div>
+                            </div>
                         </div>
                     )
                 })}

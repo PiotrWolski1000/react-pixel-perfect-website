@@ -76,20 +76,22 @@ class index extends Component {
     handleSubmit = e => {
         e.preventDefault()
         if(
-            //just topic
+            //just topic input
+            (
             this.state.namePassed === true &&
             this.state.emailPassed === true &&
             this.state.topicPassed === true &&
             this.state.messagePassed === true &&
-            this.state.topic !== 'evaluation' ||
-            //subtopic & topic
+            this.state.topic !== 'evaluation') ||
+            //subtopic && topic inputs
+            (
             this.state.namePassed === true &&
             this.state.emailPassed === true &&
             this.state.topicPassed === true &&
             this.state.messagePassed === true &&
             this.state.subtopic !== true && 
             this.state.subtopic !== false &&
-            this.state.subtopic !== ''
+            this.state.subtopic !== '')
         ){
             console.log('form submitted')
             console.log('name: ', this.state.name)
