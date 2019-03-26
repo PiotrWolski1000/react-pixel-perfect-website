@@ -12,7 +12,8 @@ class index extends Component {
             name: '',
             email: '',
             topic: '',
-            subtopic: false,
+            subtopic: null,
+            subtopicValue: null, 
             message: '',
             
             namePassed: null,
@@ -53,8 +54,9 @@ class index extends Component {
             }
         }
         
-        else if(name === 'subtopic' && this.state.topic === 'evaluation' ){
+        else if(this.state.topic === 'evaluation' && name === 'subtopic'){
             if(value){
+                console.log('subtopic value: ', this.state.subtopicPassed)
                 this.setState({subtopicPassed: value})                
             } else {
                 this.setState({subtopicPassed: false})
@@ -74,10 +76,20 @@ class index extends Component {
     handleSubmit = e => {
         e.preventDefault()
         if(
+            //just topic
             this.state.namePassed === true &&
             this.state.emailPassed === true &&
             this.state.topicPassed === true &&
-            this.state.messagePassed === true
+            this.state.messagePassed === true &&
+            this.state.topic !== 'evaluation' ||
+            //subtopic & topic
+            this.state.namePassed === true &&
+            this.state.emailPassed === true &&
+            this.state.topicPassed === true &&
+            this.state.messagePassed === true &&
+            this.state.subtopic !== true && 
+            this.state.subtopic !== false &&
+            this.state.subtopic !== ''
         ){
             console.log('form submitted')
             console.log('name: ', this.state.name)
@@ -111,6 +123,38 @@ class index extends Component {
             .catch(function (error) {
                 console.log(error);
             });
+    }
+    else {
+
+        if(!this.state.name){
+            this.setState({
+                namePassed: false,            
+            })
+        } 
+        
+        if (!this.state.email){
+            this.setState({
+                emailPassed: false,            
+            })
+        }
+        
+        if (!this.state.topic) {
+            this.setState({
+                topicPassed: false,            
+            })
+        }
+        
+        if(!this.state.subtopic) {
+            this.setState({
+                subtopicPassed: false,            
+            })
+        } 
+
+        if(!this.state.message) {
+            this.setState({
+                messagePassed: false,            
+            })
+        }
     }
 
      
@@ -189,6 +233,7 @@ class index extends Component {
                         <select 
                             className={this.state.subtopicPassed === false?'subtopic__input input__validation__fail':'subtopic__input'}
                             name="subtopic"
+                            value={this.state.subtopicValue}
                             onChange={this.onChangeInput}
                             onBlur={this.validate}
                         >
