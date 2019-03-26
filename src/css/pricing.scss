@@ -1,14 +1,18 @@
 .pricing{
     width: 100%;
-    height: 550px;
+    height: auto;
 }
 
 .pricing__cards__wrapper{
-    max-width: 942px;
+    margin: 0 auto;
+
     display: flex;
+    max-width: 942px;
     justify-content: space-between;
     align-items: center; 
-    margin: 0 auto;
+    @media(max-width: 942px) {
+        flex-direction: column;
+    }
 }
 
 .card{
@@ -18,6 +22,10 @@
     margin-right: 15px;
     &:nth-child(3){
         margin-right: 0;
+    }
+    
+    @media(max-width: 942px) {
+        margin-bottom: 50px;
     }
 }
 
