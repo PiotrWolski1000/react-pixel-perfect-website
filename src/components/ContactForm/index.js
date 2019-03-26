@@ -3,6 +3,8 @@ import './../../css/shared.scss'
 import './../../css/form.scss'
 import mData from './topics.json'
 
+
+
 class index extends Component {
     constructor(props){
         super(props)
@@ -10,15 +12,19 @@ class index extends Component {
             name: '',
             email: '',
             topic: '',
+            subtopic: false,
             message: ''
+            
         }
     }
+
     handleSubmit = e => {
         //validation here
         console.log('form submitted!')
         console.log('name: ', this.state.name)
         console.log('email: ', this.state.email)
         console.log('topic: ', this.state.topic)
+        console.log('subtopic: ', this.state.subtopic)
         console.log('message: ', this.state.message)
 
         e.preventDefault()
@@ -27,6 +33,15 @@ class index extends Component {
     onChangeInput = e => {
         const { name, value } = e.target
         this.setState(prevState => ({ ...prevState, [name]: value }))
+
+        if(name === 'topic')
+            if(value === 'evaluation'){
+                console.log('evaualion detected!')
+                this.setState({subtopic: value})
+            }
+            else{
+                this.setState({subtopic: false})
+            }
 
         e.preventDefault();
     }
@@ -62,18 +77,43 @@ class index extends Component {
                     <select
                         className='input3'
                         name='topic'
-                    >
+                        placeholder="CHOOSE TOPIC"
+                        onChange={this.onChangeInput}
+                    >   
+                        <option value="" disabled selected>CHOOSE TOPIC</option>
                         {mData.map((item, i)=>{
                             return(
-                            <option 
-                                key={`contact_option_${i}`}
-                                value={item.value}
-                            >
-                                {item.label}
-                            </option>  
+                                <option 
+                                    key={`contact_option_${i}`}
+                                    value={item.value}
+                                >
+                                    {item.label}
+                                </option>  
                             )
                         })}
                     </select>
+
+                    {this.state.subtopic?
+                        <select 
+                            className="subtopic__input"
+                            name="subtopic"
+                            onChange={this.onChangeInput}
+
+                        >
+                            <option value="" disabled selected>CHOOSE PROJECT TYPE</option>
+
+                            {mData[2].subtopic.options.map((item, i)=>{
+                                return(
+                                    <option 
+                                        key={`select_project_type${i}`}
+                                        value={item.value}
+                                    >
+                                        {item.label}
+                                    </option>  
+                                )
+                            })}
+                        </select>
+                    :null}
 
                     <textarea
                         className='input4'
@@ -86,7 +126,7 @@ class index extends Component {
 
                 </form>
                 
-                <div className="centralized">
+                <div className="button__container">
                     <button 
                         className="btn primary"
                         type="submit"
