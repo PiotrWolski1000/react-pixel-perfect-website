@@ -2,6 +2,25 @@
 .mainSection{
     width: 100%;
     height: 628px;
+    // position: relative;
+    // top: -10px;
+    // border-top: 1px solid black;
+    // background-color: purple;
+}
+
+.mainSection__container{
+    height: 100%;
     display: block;
-    background-image: url('/src/images/rectangle-1.png');
+    max-width: 942px;
+
+    margin: auto;
+}
+
+.mainSection__phone {
+    width: 619px;
+    height: 506px;
+    position: relative;
+    top: -511px;
+    left: 619px;
+
 }
