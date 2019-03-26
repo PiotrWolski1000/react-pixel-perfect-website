@@ -1,8 +1,9 @@
 .footer{
     width: 100%;
+
     margin-top: 50px;
-    height: 176px;
-    
+    min-width: 176px;
+
     background-image: linear-gradient(135deg, #38404a, #3d454f);
 }
 
@@ -14,7 +15,17 @@
     align-items:center;
 
     margin: auto;
-    transform: translateY(15px);
+
+
+    @media(max-width:500px) {
+        flex-direction: column;
+        padding-bottom: 50px;
+        transform: translateY(0px);
+
+        
+    }
+
+
 }
 
 .footer__left__side {
@@ -44,6 +55,14 @@
         }
     }
 
+    @media(min-width:500px) {
+        margin-left: 20px; 
+    }
+
+    @media(max-width: 499px){
+        margin-left: 0px;
+    }
+
     span {
         color: #ff6868;
         margin: 0;
@@ -55,6 +74,7 @@
 .footer__icons {
     width: 150px;
     display:flex;  
+    
 }
 
 .footer__icon__wrapper {
@@ -64,7 +84,6 @@
     width: 28px; height: 28px;
     border-radius: 50%;
     background: linear-gradient(to top, #a64c58, #ff6868);
-
 }
 .footer__icon__addintional__wrapper {
     position: absolute;
