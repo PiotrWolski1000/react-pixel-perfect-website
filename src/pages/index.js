@@ -4,6 +4,7 @@ import Pricing from '../components/Pricing/'
 import ContactForm from '../components/ContactForm/'
 import Portfolio from '../components/Portfolio/'
 import Service from '../components/Service/'
+import TwitterPost from '../components/TwitterPost'
 class index extends Component {
     render() {
         return (
@@ -12,6 +13,7 @@ class index extends Component {
                 <Service/>
                 <Portfolio/>
                 <Pricing/>
+                <TwitterPost/>
                 <ContactForm/>
             </>
         );
