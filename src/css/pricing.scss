@@ -1,6 +1,7 @@
 .pricing{
     width: 100%;
     height: auto;
+    margin-top: 50px;
 }
 
 .pricing__cards__wrapper{
@@ -118,7 +119,9 @@
 
     display: flex;
     justify-content: flex-start;
+    
     ul {
+        padding-left:20px;
         margin: 0;
         list-style: none;
     }
