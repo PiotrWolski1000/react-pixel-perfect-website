@@ -16,8 +16,8 @@ class index extends Component {
     render() {
         const { collapsed } = this.state
         return (
-            <div className="header__wrapper">
-                <header className = "header">
+            <header className="header__wrapper">
+                <div className = "header">
                     <div className = "header__logo">
                         <a href="/">
                             buje
@@ -48,11 +48,12 @@ class index extends Component {
                         </ul>
                     </nav>
 
-                </header>
+                </div>
 
                 <nav 
+                    className={collapsed?'header_mobile_menu':'header_mobile_menu_close'}
                     // className={collapsed?'header_mobile_menu open_mobile_menu':'header_mobile_menu'}
-                    className="header_mobile_menu"
+                    // className="header_mobile_menu"
                 >
                     <ul>
 
@@ -72,7 +73,7 @@ class index extends Component {
               </nav>
 
 
-            </div>
+            </header>
         );
     }
 }
