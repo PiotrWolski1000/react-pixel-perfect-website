@@ -110,7 +110,10 @@ class index extends Component {
             }
             console.log('posting this: ', payload)
             const that = this;
-            axios.post('http://5c8b9025a0bb650014f03b2b.mockapi.io/contact_forms', payload)
+            axios.post('http://5c8b9025a0bb650014f03b2b.mockapi.io/contact_forms', payload,
+            {
+                'Content-Type': 'application/json'
+            },)
             .then(function (response) {
                 console.log(response);
                 that.setState({
