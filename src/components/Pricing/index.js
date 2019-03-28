@@ -7,7 +7,7 @@ import mData from './mData.json'
 
 const index = () => {
     return (
-        <section className="pricing">
+        <section className="pricing clear_both">
             <h1>Pricing</h1>
             <div className="pricing__cards__wrapper">
                 {mData.map((item, i)=>{

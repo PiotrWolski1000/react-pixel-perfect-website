@@ -1,36 +1,39 @@
 import React from 'react';
+import  {gallery} from './gallery.js'
 import './../../css/shared.scss'
 import './../../css/portfolio.scss'
-import  {gallery} from './gallery.js'
-
 
 const index = () => {
     return (
-        <section className="portfolio">
-            
+        <section className="project_main_container">
             <h1>Portfolio</h1>
-            
-            <div className="portfolio__grid__container">
+            <ul>
                 {gallery.map((item, i)=>{
                     return(
-                        <div className = "grid__item__wrapper" key={`grid_item_wrapper_${i}`}>
-                            <img 
-                                className="grid__image"
-                                key={`grid_item_${i}`}
-                                src={item.small} 
-                                srcSet={`${item.small} 326w, ${item.medium} 651, ${item.large} 977w`}
-                                alt="alt"
-                            />
-
-                            <div className="grid__image__hover">
-                                <p>project title</p>
-                                <div className="grid__hover__plus"> + </div>
+                        <li key={`portfolio_item_list_${i}`}>
+                            <div className = "project_container" key={`grid_item_wrapper_${i}`}>
+                                <div className="project_media">
+                                    <img 
+                                        className="grid__image"
+                                        key={`grid_item_${i}`}
+                                        src={item.small} 
+                                        srcSet={`${item.small} 320w, ${item.medium} 768w, ${item.large} 1440w`}
+                                        alt = {item.title}
+                                    />
+                                    
+                                    <div className="grid__hover__image">
+                                        <h1 className="grid__title__hover">
+                                            {item.title}
+                                            <a href="/"><span>+</span></a>
+                                        </h1>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </li>
                     )
                 })}
-            </div>
+            </ul>
         </section>
-    );
+    )
 };
 export default index;
