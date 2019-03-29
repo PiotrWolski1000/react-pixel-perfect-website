@@ -1,3 +1,5 @@
+@import "./shared.scss";
+
 .service {
     width: 100%;
     // min-height: 500px;
@@ -50,5 +52,5 @@
     line-height: 1.5;
     letter-spacing: normal;
     text-align: center;
-    color: #9aa0a8;
+    color: $service-list-color;
 }

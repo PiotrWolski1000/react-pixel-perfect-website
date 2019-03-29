@@ -2,14 +2,47 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 //var colors
-
+$charcoal-light-grey: #3a424c;
 $charcoal-grey: #3d454f;
-$salmon: #ff6868;
+$grey: #38404a;
 
+
+$salmon: #ff6868;
+$salmon-dark: #a64c58; 
+
+$white: white;
+$red: red;
+$black: black;
+//footer grey scale colors for e.g. title footer
+$lighter-grey: #b2b4b4;
+$darker-grey: #848484;
+$hr-grey: #49515c;
+
+//header
+    //gradient
+$header-darker: #333b45;
+$header-lighter: #3d454f;
+    //links
+$header-link: white;
+    //bg hover menu
+$header-hover-menu-background: white;
+$header-hover-menu-link: black;
+
+    //pricing 
+$border-pricing-card: #f5f7f9;
+$background-pricing-card: white;
+$pricing-list-color: #99a0a8; 
+
+    //service
+$service-list-color: #9aa0a8;
+    //last twitter post
+$twitter-last-color: white;
+$twitter-last-hour: #838a93;
+//others colors
+$button-text: white;
 
 $inputs: #f5f7f9;
 $input-placeholder: #a2a2a2;
-
 
 //buttons
 .btn{
@@ -18,7 +51,6 @@ $input-placeholder: #a2a2a2;
     width: 102px;
     height: 46px;
     border-radius: 8px;
-    color: white;
     font-family: "Open Sans";
     text-transform: uppercase;
 
@@ -33,39 +65,15 @@ $input-placeholder: #a2a2a2;
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: #ffffff;
+    color: $button-text;
 
     margin: 15px 0 !important;
 }
 
 .primary{
-    background-color: #ff6868;
-    
+    background-color: $salmon;
 }
 
-// .secondary {
-//     text-align: left !important;
-// }
-
-
-
-//headers
-
-.color {
-    background-image: linear-gradient(to top, var(--charcoal-grey), var(--salmon)), linear-gradient(to bottom, #ffffff, #ffffff);
-    font-family: "Open Sans";
-    font-size: 52px;
-    font-weight: 800;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #ffffff;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
 h1 {
     font-family: "Open Sans";
@@ -76,7 +84,7 @@ h1 {
     line-height: normal;
     letter-spacing: normal;
     text-align: center;
-    color: #3a424c;
+    color: $charcoal-light-grey;
     padding: 20px;
     margin: 0 0 91 0;
     text-align: center;
@@ -91,7 +99,7 @@ h2 {
     line-height: normal;
     letter-spacing: normal;
     text-align: center;
-    color: #3a424c;
+    color: $charcoal-light-grey;
 }
 
 //others

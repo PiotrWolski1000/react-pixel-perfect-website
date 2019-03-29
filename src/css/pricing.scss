@@ -1,3 +1,5 @@
+@import "./shared.scss";
+
 .pricing{
     width: 100%;
     height: auto;
@@ -42,7 +44,7 @@
     width: 299px;
     height: 127px;
     border-radius: 8px 8px 0 0;
-    background-image: linear-gradient(135deg, #38404a, #3d454f);
+    background-image: linear-gradient(135deg, $grey, $charcoal-grey);
 }
 
 .card__top__left{
@@ -52,7 +54,7 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
         margin: 0;
-        background-image: linear-gradient(to top, #3d454f, #ff6868);
+        background-image: linear-gradient(to top, $salmon-dark, $salmon);
         font-family: 'Open Sans';
         text-transform: uppercase;
         font-weight: 800;
@@ -88,13 +90,9 @@
     margin-right: 20px;
     font-family: "Open Sans";
     font-style: bold;
-    // background-image: linear-gradient(to bottom, #3d454f, #ff6868);
-    // -webkit-background-clip: text;
-    // background-clip: text;
-    // -webkit-text-fill-color: transparent;
     font-size: 40px;
 
-    color: #ff6868;
+    color: $salmon;
 
     &:after{
         font-size:30px;
@@ -105,8 +103,8 @@
 .card__bottom {
     width: 295px;
     height: 250px;
-    border: solid 2px #f5f7f9;
-    background-color: #ffffff;
+    border: solid 2px $border-pricing-card;
+    background-color: $background-pricing-card;
 
     display: flex;
     flex-direction: column;
@@ -139,7 +137,7 @@
         line-height: normal;
         letter-spacing: normal;
         text-align: left;
-        color: #99a0a8;
+        color: $pricing-list-color;
     }
 
     li:before{
@@ -148,9 +146,9 @@
         line-height: 14px;
         height: 16px;
         border-radius: 50px;
-        border: 2px solid #ff6868;
+        border: 2px solid $salmon;
         content: "\0279C";
         margin-right: 10px;
-        color: #ff6868;
+        color: $salmon;
     }
 }

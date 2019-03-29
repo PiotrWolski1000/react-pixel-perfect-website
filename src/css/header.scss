@@ -1,7 +1,9 @@
+@import "./shared.scss";
+
 .header__wrapper {
     width: 100%;
     min-height: 95px;
-    background-image: linear-gradient(to bottom, #333b45, #3d454f); 
+    background-image: linear-gradient(to bottom, $header-darker, $header-lighter); 
 }
 
 
@@ -26,11 +28,11 @@
     line-height: normal;
     letter-spacing: normal;
     
-    color: #ff6868;
+    color: $salmon;
     text-transform: uppercase;
 
     a:visited, a:link, a:active{
-        color: #ff6868;
+        color: $salmon;
         text-decoration: none;
     }
 
@@ -59,8 +61,8 @@
         text-decoration: none;
     }
 
-    a:visited{color:white;}
-    a:link{color:white;}
+    a:visited{color:$header-link;}
+    a:link{color:$header-link;}
 
     width: 374px;
     height: 12px;
@@ -71,7 +73,7 @@
     font-stretch: normal;
     line-height: normal;
     letter-spacing: normal;
-    color: #ffffff;
+    color: $header-link;
 
     @media(max-width: 500px) {
         display: none;
@@ -89,7 +91,7 @@
         height: 5px;
         border-radius: 5px;
         transition: 0.4s;
-        background-color: white;
+        background-color: $header-hover-menu-background;
         &:first-child,
         &:last-child {
         margin: 4px 0;
@@ -118,7 +120,7 @@
 
 
 .header_mobile_menu {
-    background-color: white;
+    background-color: $white;
     width: 100%;
     height: 200px;
     
@@ -136,7 +138,7 @@
         font-family: "Open Sans";
         text-transform: uppercase;
         a:visited, a:link , a:active {
-            color: black;
+            color: $black;
             text-decoration: none;
             
         }
