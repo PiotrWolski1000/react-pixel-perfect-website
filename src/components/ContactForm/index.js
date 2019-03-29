@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react'
 import './../../css/shared.scss'
 import './../../css/form.scss'
@@ -193,7 +194,7 @@ class index extends Component {
                     action="/"
                 >
                     <input 
-                        className = {this.state.namePassed === false?'input1 input__validation__fail':'input1'}
+                        className = {this.state.namePassed === false?'input__name input__validation__fail':'input__name'}
                         type='text' 
                         name='name' 
                         value={this.state.name} 
@@ -204,7 +205,7 @@ class index extends Component {
                     /> 
 
                     <input 
-                        className={this.state.emailPassed === false?'input2 input__validation__fail':'input2'}
+                        className={this.state.emailPassed === false?'input__email input__validation__fail':'input__email'}
                         type='email' 
                         name='email' 
                         value={this.state.email} 
@@ -215,7 +216,7 @@ class index extends Component {
                     /> 
                     
                     <select
-                        className={this.state.topicPassed === false?'input3 input__validation__fail':'input3'}
+                        className={this.state.topicPassed === false?'input__topic input__validation__fail':'input__topic'}
                         name='topic'
                         placeholder="CHOOSE TOPIC"
                         onChange={this.onChangeInput}
@@ -258,7 +259,7 @@ class index extends Component {
                     :null}
 
                     <textarea
-                        className={this.state.messagePassed === false?'input4 input__validation__fail':'input4'}                        
+                        className={this.state.messagePassed === false?'input__message input__validation__fail':'input__message'}                        
                         name='message'
                         placeholder='MESSAGE...'
                         value={this.state.message}
