@@ -17,14 +17,14 @@ const index = () => {
             <div className = "footer__icon__wrapper">
                 <div className = "footer__icon__addintional__wrapper"> 
                     <a href="/">
-                        <FontAwesomeIcon className="footer__icon"icon={faLinkedinIn}/>
+                        <FontAwesomeIcon className="footer__icon" icon={faTwitter}/>
                     </a>
                 </div>
             </div>
             <div className = "footer__icon__wrapper">
                 <div className = "footer__icon__addintional__wrapper"> 
                     <a href="/">
-                        <FontAwesomeIcon className="footer__icon" icon={faTwitter}/>
+                        <FontAwesomeIcon className="footer__icon"icon={faLinkedinIn}/>
                     </a>
                 </div>
             </div>
