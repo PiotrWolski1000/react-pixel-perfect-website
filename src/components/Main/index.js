@@ -14,6 +14,9 @@ const index = () => {
                     className="mainSection_background"
                     src={background.small} 
                     srcSet={`${background.small} 320w, ${background.medium} 768w, ${background.large} 1440w`} 
+                    sizes="(max-width: 320px) 280px,
+                    (max-width: 768px) 768px,
+                    1440px"
                     alt={background.alt}
                     width="100%"
                     height="100%"
@@ -25,7 +28,6 @@ const index = () => {
                     alt={phone.alt}
                 /> 
                 <div className="mainSection__container">
-                    {/* <h3 className="text__salmon">We deliver</h3> */}
                     <h3 className="we__deliver">We deliver</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,

@@ -35,12 +35,36 @@ $input-placeholder: #a2a2a2;
     letter-spacing: normal;
     color: #ffffff;
 
-
+    margin: 15px 0 !important;
 }
 
 .primary{
     background-color: #ff6868;
     
+}
+
+// .secondary {
+//     text-align: left !important;
+// }
+
+
+
+//headers
+
+.color {
+    background-image: linear-gradient(to top, var(--charcoal-grey), var(--salmon)), linear-gradient(to bottom, #ffffff, #ffffff);
+    font-family: "Open Sans";
+    font-size: 52px;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h1 {
