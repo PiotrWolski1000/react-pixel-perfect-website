@@ -10,16 +10,11 @@ class index extends Component {
         super(props)
         this.state = {
             collapsed: false,
-            prevScrollpos: window.pageYOffset,
-        visible: true
         }
     }
 
-    // logoOnClick = () => {
-        scrollToTop = () => {
-            scroll.scrollToTop()
-        }
-    // }
+
+    
 
     handleCollapseMenu = () => this.setState(prevState => ({collapsed: !prevState.collapsed}))
 
@@ -82,6 +77,7 @@ class index extends Component {
                                             smooth={true}
                                             offset={-70}
                                             duration= {500}
+                                            onClick={this.handleCollapseMenu}
                                         >
                                             {item.label}
                                         </Link>
