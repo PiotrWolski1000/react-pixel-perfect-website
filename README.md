@@ -30,7 +30,7 @@ Builds the app for production to the `build` folder.<br>
   - [x] [**required**] before submit **OR** 
   - [x] [**optional**] while user inputs data
       
-- [ ] On form submit (choose one)
+- [x] On form submit (choose one)
   - [x] [**required**] print fields values to console **OR** 
   - [x] [**optional**] send a request to mocked API
 - [x] [**optional**] Host the implemented website to provide a preview for reviewers 
@@ -39,6 +39,8 @@ Builds the app for production to the `build` folder.<br>
 
 ## My toughts
 
-
+The whole page is wrapped inside layout, which is header and footer. All the content on the website are it's children.
+Using css variables to make it easy to change colors etc.
+There are two versions of social media icons, they differ by the Twitter icon.
 
 
