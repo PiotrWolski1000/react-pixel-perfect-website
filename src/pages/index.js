@@ -5,10 +5,16 @@ import ContactForm from '../components/ContactForm/'
 import Portfolio from '../components/Portfolio/'
 import Service from '../components/Service/'
 import TwitterPost from '../components/TwitterPost'
+import {Helmet} from 'react-helmet'
 class index extends Component {
     render() {
         return (
             <>
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>Buje - Piotr Wolski</title>
+                    <meta name="description" content="Buje, callstack recruitment task" />
+                </Helmet>
                 <Main title="We deliver" id="home"/>
                 <Service title="Service" id="service"/>
                 <Portfolio title="Portfolio" id="portfolio"/>
