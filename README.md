@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Live Preview
+I'm using Netlify as continuous Git based deployment system service, [link to live preview.](https://buje-piotr-wolski.netlify.com)
 
 ## Available Scripts
 
@@ -9,60 +10,35 @@ In the project directory, you can run:
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
 Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Checklist
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [x] [**required**] Use one of the building tools (Webpack, Gulp, Parcel) - you can use some boilerplates 
+- [x] [**required**] Use GIT for versioning 
+- [x] [**optional**] Use semantic commit message convention [**optional**]
+- [x] [**optional**] Optimize images loading in a way proposed by you (**optional**)
+- [x] [**required**] Implement page based on delivered design file and use semantic, SEO friendly HTML 
+- [x] [**required**] Use RWD techniques and mobile-first approach to implement responsive page 
+- [x] [**required**] Use one of CSS preprocessors (LESS, SCSS) 
+- [ ] [**optional**] Use one of class naming convention (BEM, OOCSS, ACSS) 
+- [x] [**required**] Implement form with the behaviour described above 
+- [x] Form fields validation (choose one)
+  - [x] [**required**] before submit **OR** 
+  - [x] [**optional**] while user inputs data
+      
+- [ ] On form submit (choose one)
+  - [x] [**required**] print fields values to console **OR** 
+  - [x] [**optional**] send a request to mocked API
+- [x] [**optional**] Host the implemented website to provide a preview for reviewers 
+- [x] [**optional**] Integrate automatic release of the page 
+- [x] [**required**] Copy this checklist into README file and check mark completed points 
 
-### `npm run eject`
+## My toughts
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
