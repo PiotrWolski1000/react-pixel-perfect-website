@@ -1,9 +1,11 @@
+@import "./shared.scss";
+
 .twitter {
     margin: 50px 0;
     height: auto;
     width: 100%;
 
-    background-image: linear-gradient(135deg, #38404a, #3d454f);
+    background-image: linear-gradient(135deg, $grey, $charcoal-grey);
 }
 
 .twitter__wrapper {
@@ -25,11 +27,11 @@
     }
 
     p{  
-        color: white;
+        color: $twitter-last-color;
     }
 
     span {
-        color: #838a93;
+        color: $twitter-last-hour;
     }
 }
 
@@ -55,5 +57,5 @@
 }
 
 .twitter_icon{
-    color: #3d454f;
+    color: $grey;
 }

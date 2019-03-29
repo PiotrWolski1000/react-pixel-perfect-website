@@ -1,3 +1,4 @@
+@import "./shared.scss";
 
 .footer__icons {
     display:flex;  
@@ -16,7 +17,7 @@
     position: relative;
     width: 34px; height: 34px;
     border-radius: 50%;
-    background: linear-gradient(to top, #a64c58, #ff6868);
+    background: linear-gradient(to top, $salmon-dark, $salmon);
 
 }
 .footer__icon__addintional__wrapper {
@@ -26,7 +27,7 @@
     top: 3px; 
     left: 3px;
     border-radius: 50%;
-    background-color: #38404a;
+    background-color: $grey;
 
     display: flex;
     justify-content: center;
@@ -40,7 +41,7 @@
     top: 2px; 
     left: 2px;
     border-radius: 50%;
-    background-color: #38404a;
+    background-color: $grey;
 
     display: flex;
     justify-content: center;
@@ -48,14 +49,14 @@
 }
 
 .footer__icon {
-    color: #ff6868;
+    color: $salmon;
 }
 
 .footer__icon__reversed {
-    color: #38404a;
+    color: $grey;
     font-size: 21px;
     position: relative;
-    left: 6px;
-    top: 6px;
+    left: 7px;
+    top: 7px;
 }
 

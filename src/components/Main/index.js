@@ -40,7 +40,6 @@ const index = () => {
                         contact us
                     </button>
 
-                    {/* <SocialMedia/> */}
                     {<TwitterReversed/>}
                 </div>
             </div>

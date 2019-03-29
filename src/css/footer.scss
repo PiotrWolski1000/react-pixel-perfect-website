@@ -1,10 +1,12 @@
+@import "./shared.scss";
+
 .footer{
     width: 100%;
 
     margin-top: 50px;
     min-width: 176px;
 
-    background-image: linear-gradient(135deg, #38404a, #3d454f);
+    background-image: linear-gradient(135deg, $grey, $charcoal-grey);
 }
 
 .footer__content__wrapper {
@@ -16,20 +18,15 @@
 
     margin: auto;
 
-
     @media(max-width:500px) {
         flex-direction: column;
         padding-bottom: 50px;
-
-        
     }
-
-
 }
 
 .footer__left__side {
     hr {
-        border: solid 1px #49515c;
+        border: solid 1px $hr-grey;
     }
     p {
         &:nth-child(1){
@@ -44,12 +41,12 @@
             letter-spacing: normal;
             text-transform: uppercase;
             font-size: 22px;
-            background-image: linear-gradient(to top, #848484, #b2b4b4);
+            background-image: linear-gradient(to top, $lighter-grey, $darker_grey);
 
             transform: translateY(15px);
         }
         &:nth-child(3){
-            color: #b2b4b4;
+            color: $lighter-grey;
             transform: translateY(-5px);
         }
     }
@@ -60,7 +57,7 @@
 
 
     span {
-        color: #ff6868;
+        color: $salmon;
         margin: 0;
         font-family: 'Myriad Pro Regular';
       
