@@ -21,12 +21,12 @@ const index = () => {
                     width="100%"
                     height="100%"
                 />
-                {/* <img 
+                <img 
                     className="mainSection__phone"
                     src={phone.small} 
                     srcSet={`${phone.small} 300w, ${phone.medium} 768w, ${phone.large} 1280w`} 
                     alt={phone.alt}
-                />  */}
+                /> 
                 <div className="mainSection__container">
                     <h3>We deliver</h3>
                     <p>
