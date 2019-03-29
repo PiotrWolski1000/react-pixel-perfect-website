@@ -8,9 +8,9 @@ class index extends React.Component{
         return (
             <section className="twitter">
                 <div className="twitter__wrapper">
-                    <h1>
+                    <p className="twitter__last__post">
                         Spent some time working on estabilishing a look and feel for our case studies, today!
-                    </h1>
+                    </p>
 
 
                     <div className="twitter_time"> 
