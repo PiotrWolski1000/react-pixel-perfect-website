@@ -26,7 +26,6 @@ class index extends Component {
 
                     <div
                         className={collapsed ? 'header__menu isOpen' : 'header__menu'}
-                        // className='header__menu__open'
                         onClick={this.handleCollapseMenu}
                     >
                         <div />
@@ -52,8 +51,6 @@ class index extends Component {
 
                 <nav 
                     className={collapsed?'header_mobile_menu':'header_mobile_menu_close'}
-                    // className={collapsed?'header_mobile_menu open_mobile_menu':'header_mobile_menu'}
-                    // className="header_mobile_menu"
                 >
                     <ul>
 
