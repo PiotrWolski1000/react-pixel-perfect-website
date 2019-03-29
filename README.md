@@ -1,5 +1,5 @@
 ## Live Preview
-I'm using Netlify as continuous Git based deployment system service, [link to live preview!](https://buje-piotr-wolski.netlify.com)
+I'm using Netlify as continuous Git based deployment system service, [link to live preview.](https://buje-piotr-wolski.netlify.com)
 
 ## Available Scripts
 
@@ -36,5 +36,9 @@ Builds the app for production to the `build` folder.<br>
 - [x] [**optional**] Host the implemented website to provide a preview for reviewers 
 - [x] [**optional**] Integrate automatic release of the page 
 - [x] [**required**] Copy this checklist into README file and check mark completed points 
+
+## My toughts
+
+
 
 
