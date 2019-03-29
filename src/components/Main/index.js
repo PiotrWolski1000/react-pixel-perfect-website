@@ -1,7 +1,7 @@
 import React from 'react';
 import './../../css/main.scss'
 import './../../css/shared.scss'
-import SocialMedia from './../../components/SocialMedia'
+import TwitterReversed from './../../components/SocialMedia/TwitterReversed'
 
 import {background, phone} from './mainSectionImages' 
 
@@ -40,8 +40,8 @@ const index = () => {
                         contact us
                     </button>
 
-                    <SocialMedia/>
-
+                    {/* <SocialMedia/> */}
+                    {<TwitterReversed/>}
                 </div>
             </div>
         </section>

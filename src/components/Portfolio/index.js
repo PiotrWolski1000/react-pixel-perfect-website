@@ -17,7 +17,10 @@ const index = () => {
                                         className="grid__image"
                                         key={`grid_item_${i}`}
                                         src={item.small} 
-                                        srcSet={`${item.small} 320w, ${item.medium} 768w, ${item.large} 1440w`}
+                                        srcSet={`${item.small} 326w, ${item.medium} 651w, ${item.large} 977w`}
+                                        sizes="(max-width: 320px) 280px,
+                                        (max-width: 768px) 651px,
+                                        (max-width: 1024px) 977px"
                                         alt = {item.title}
                                     />
                                     

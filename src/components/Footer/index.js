@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import SocialMedia from './../SocialMedia/'
-import './../../css/footer.scss'
-
+import SocialMedia from '../SocialMedia/SocialMedia'
+import './../../css/socialMedia.scss'
 class index extends Component {
     render() {
         return (
