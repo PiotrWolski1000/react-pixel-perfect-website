@@ -28,7 +28,7 @@ const index = () => {
                     alt={phone.alt}
                 /> 
                 <div className="mainSection__container">
-                    <h3 className="we__deliver">We deliver</h3>
+                    <h3>We deliver</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore 
