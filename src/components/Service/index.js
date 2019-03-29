@@ -3,10 +3,10 @@ import './../../css/service.scss'
 import './../../css/shared.scss'
 import {mData, pathCrosserImages} from './data'
 
-const index = () => {
+const index = ({title, id}) => {
     return (
         <section className="service">
-            <h1>Service</h1>
+            <h1>{title}</h1>
             
             <img 
                 className="service__path__crosser"

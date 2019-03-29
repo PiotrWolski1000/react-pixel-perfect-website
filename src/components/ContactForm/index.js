@@ -187,7 +187,7 @@ class index extends Component {
     render() {
         return (
             <section className="contact">
-                <h1>Contact</h1>
+                <h1>{this.props.title}</h1>
                 <form 
                     name="contact-form"
                     className='contact__form'

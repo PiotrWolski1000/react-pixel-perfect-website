@@ -1,15 +1,25 @@
 import React, { Component } from 'react';
 import './../../css/header.scss'
 import {mNav} from './mNav'
+import { Link, animateScroll as scroll } from "react-scroll";
+
 
 class index extends Component {
 
     constructor(props) {
         super(props)
         this.state = {
-            collapsed: false
+            collapsed: false,
+            prevScrollpos: window.pageYOffset,
+        visible: true
         }
     }
+
+    // logoOnClick = () => {
+        scrollToTop = () => {
+            scroll.scrollToTop()
+        }
+    // }
 
     handleCollapseMenu = () => this.setState(prevState => ({collapsed: !prevState.collapsed}))
 
@@ -19,7 +29,7 @@ class index extends Component {
             <header className="header__wrapper">
                 <div className = "header">
                     <div className = "header__logo">
-                        <a href="/">
+                        <a href="/" onClick= {scroll.scrollToTop}>
                             buje
                         </a>
                     </div>
@@ -38,9 +48,16 @@ class index extends Component {
                             {mNav.map((item, i)=>{
                                 return(
                                     <li key={`header_horizontal_menu_${i}`}>
-                                        <a href={item.path}>
+                                        <Link 
+                                            //className=""
+                                            to={item.path}
+                                            spy={true}
+                                            smooth={true}
+                                            offset={-70}
+                                            duration= {500}
+                                        >
                                             {item.label}
-                                        </a>
+                                        </Link>
                                     </li>
                                 )
                             })}
@@ -58,9 +75,16 @@ class index extends Component {
                             mNav.map((item, i) => {  
                                 return (
                                     <li key={`header_mobile_li_${i}`}> 
-                                        <a href={item.path}>
+                                        <Link 
+                                            //className=""
+                                            to={item.path}
+                                            spy={true}
+                                            smooth={true}
+                                            offset={-70}
+                                            duration= {500}
+                                        >
                                             {item.label}
-                                        </a>
+                                        </Link>
                                     </li>
                                 )
                                 }

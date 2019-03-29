@@ -3,10 +3,10 @@ import  {gallery} from './gallery.js'
 import './../../css/shared.scss'
 import './../../css/portfolio.scss'
 
-const index = () => {
+const index = ({title, id}) => {
     return (
         <section className="project_main_container">
-            <h1>Portfolio</h1>
+            <h1>{title}</h1>
             <ul>
                 {gallery.map((item, i)=>{
                     return(

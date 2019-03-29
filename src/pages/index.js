@@ -9,12 +9,13 @@ class index extends Component {
     render() {
         return (
             <>
-                <Main/>
-                <Service/>
-                <Portfolio/>
-                <Pricing/>
+                <Main title="We deliver" id="home"/>
+                <Service title="Service" id="service"/>
+                <Portfolio title="Portfolio" id="portfolio"/>
+                <Pricing title="Pricing" id="pricing"/>
                 <TwitterPost/>
-                <ContactForm/>
+                <ContactForm title="Contact" id="contact"/>
+           
             </>
         );
     }

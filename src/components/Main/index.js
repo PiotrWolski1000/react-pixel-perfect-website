@@ -6,7 +6,7 @@ import TwitterReversed from './../../components/SocialMedia/TwitterReversed'
 import {background, phone} from './mainSectionImages' 
 
 
-const index = () => {
+const index = ({title, id}) => {
     return (
         <section className="mainSection">
             <div className="mainSection_wrapper">
@@ -28,7 +28,7 @@ const index = () => {
                     alt={phone.alt}
                 /> 
                 <div className="mainSection__container">
-                    <h3>We deliver</h3>
+                    <h3>{title}</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore 

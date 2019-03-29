@@ -5,10 +5,10 @@ import './../../css/shared.scss'
 import mData from './mData.json'
 
 
-const index = () => {
+const index = ({title, id}) => {
     return (
         <section className="pricing clear_both">
-            <h1>Pricing</h1>
+            <h1>{title}</h1>
             <div className="pricing__cards__wrapper">
                 {mData.map((item, i)=>{
                     return(

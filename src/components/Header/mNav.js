@@ -1,22 +1,22 @@
 export const mNav = [
     {
         label: 'home', 
-        path: '/'
+        path: 'home'
     },
     {
         label: 'service', 
-        path: '/'
+        path: 'service'
     },
     {
         label: 'portfolio', 
-        path: '/'
+        path: 'portfolio'
     },
     {
         label: 'pricing',
-        path: '/'
+        path: 'pricing'
     },
     {
         label: 'contact', 
-        path: '/'
+        path: 'contact'
     },
 ]
