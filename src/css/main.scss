@@ -18,6 +18,7 @@
 }
 
 .we__deliver {
+    position: relative;
     max-width: 312px;
     width: 100%;
     background-image: linear-gradient(to top, #3d454f, #ff6868);
@@ -65,9 +66,6 @@
         text-align: left;
         color: #ffffff;
 
-        @media(max-width: 768px) {
-            width: 50%;
-        }
     }
 
     @media(max-width: 942px) {
