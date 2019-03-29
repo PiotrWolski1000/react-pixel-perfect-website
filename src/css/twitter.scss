@@ -11,31 +11,24 @@
     height: 100%; 
     display: flex;
     flex-direction: column;
-
-    // text-align: center;
-    // margin: 0 auto;
     justify-content: center;
     align-items: center;
     margin: auto;
 
-    h1 {
+    .twitter__last__post {
+        width: 50%;
+        max-width: 942px;
 
-        color: white;
-        // width: 100%;
-        @media(max-width: 425px) {
-            font-size: 18px;
-        }
+        font-size: 18px;
+        text-align: center;
+        margin: 1rem 1rem 0 1rem;
     }
-    p{  
-        // position: relative;
-        // bottom: -50px;
-        color: white;
 
+    p{  
+        color: white;
     }
 
     span {
-        // position: relative;
-
         color: #838a93;
     }
 }
@@ -45,9 +38,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    position: relative;
-    bottom: 50px;
 }
 
 .twitter_icon_wrapper{
@@ -61,7 +51,6 @@
     justify-content: center;
     align-items: center;
 
-    // margin: 0 auto;
     margin-bottom: 25px;
     background-image: linear-gradient(to top, #3d454f, #ff6868);
 }
