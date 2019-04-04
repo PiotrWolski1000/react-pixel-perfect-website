@@ -12,8 +12,8 @@ class index extends Component {
             <>
                 <Helmet>
                     <meta charSet="utf-8" />
-                    <title>Buje - Piotr Wolski</title>
-                    <meta name="description" content="Buje, callstack recruitment task" />
+                    <title>Cosa</title>
+                    <meta name="description" content="Cosa, mordern software hause." />
                 </Helmet>
                 <Main title="We deliver" id="home"/>
                 <Service title="Service" id="service"/>
