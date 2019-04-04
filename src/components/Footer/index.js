@@ -8,9 +8,9 @@ class index extends Component {
                 <div className="footer__content__wrapper">
                     
                     <div className="footer__left__side">
-                        <p>buje</p>
+                        <p>COSA</p>
                         <hr></hr>
-                        <p><span>Buje.com</span> © 2014 Powered by <span>Wordpress</span></p>
+                        <p><span>cosa.com</span> © 2014 Powered by <span>Wordpress</span></p>
                     </div>
 
                     <SocialMedia/>
