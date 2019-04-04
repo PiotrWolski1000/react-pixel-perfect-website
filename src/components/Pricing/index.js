@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './card'
-import './../../css/pricing.scss'//redundant? look card component
+import './../../css/pricing.scss'
 import './../../css/shared.scss'
 import mData from './mData.json'
 
