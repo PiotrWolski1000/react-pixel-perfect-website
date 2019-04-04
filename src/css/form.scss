@@ -35,10 +35,8 @@
         resize: none;
         padding: 10px;
     }
-
-    
-
 }
+
 
 .input__name {
     max-height: 46px;
@@ -76,7 +74,7 @@
 }
 .input__message {
     grid-column: 1/7; 
-    grid-row: 2/7;
+    grid-row: 3/8;
     height: 256px;
     @media(max-width: 600px){
         grid-column: 1/7;
@@ -86,8 +84,10 @@
 
 .subtopic__input{
     grid-column: 1/7;
-    grid-row: 4;
-
+    grid-row: 2;
+    @media(max-width: 600px){
+        grid-row: 4;
+    }
 
 }
 
