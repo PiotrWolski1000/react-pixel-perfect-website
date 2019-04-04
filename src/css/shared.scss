@@ -44,6 +44,8 @@ $button-text: white;
 $inputs: #f5f7f9;
 $input-placeholder: #a2a2a2;
 
+$font1: "Roboto";
+$font2: "Myriad Pro Regular";
 //buttons
 .btn{
     border: none;
@@ -51,7 +53,7 @@ $input-placeholder: #a2a2a2;
     width: 102px;
     height: 46px;
     border-radius: 8px;
-    font-family: "Open Sans";
+    font-family: $font1;
     text-transform: uppercase;
 
     &:hover{
@@ -76,7 +78,7 @@ $input-placeholder: #a2a2a2;
 
 
 h1 {
-    font-family: "Open Sans";
+    font-family: $font1;
     font-size: 38px;
     font-weight: 300;
     font-style: normal;
@@ -91,7 +93,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Open Sans";
+    font-family: $font1;
     font-size: 24px;
     font-weight: normal;
     font-style: normal;

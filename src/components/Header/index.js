@@ -5,16 +5,12 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 
 class index extends Component {
-
     constructor(props) {
         super(props)
         this.state = {
             collapsed: false,
         }
     }
-
-
-    
 
     handleCollapseMenu = () => this.setState(prevState => ({collapsed: !prevState.collapsed}))
 
@@ -25,7 +21,7 @@ class index extends Component {
                 <div className = "header">
                     <div className = "header__logo">
                         <a href="/" onClick= {scroll.scrollToTop}>
-                            buje
+                            COSA
                         </a>
                     </div>
 
@@ -44,7 +40,6 @@ class index extends Component {
                                 return(
                                     <li key={`header_horizontal_menu_${i}`}>
                                         <Link 
-                                            //className=""
                                             to={item.path}
                                             spy={true}
                                             smooth={true}
@@ -66,12 +61,10 @@ class index extends Component {
                 >
                     <ul>
 
-                        {
-                            mNav.map((item, i) => {  
+                        {mNav.map((item, i) => {  
                                 return (
                                     <li key={`header_mobile_li_${i}`}> 
                                         <Link 
-                                            //className=""
                                             to={item.path}
                                             spy={true}
                                             smooth={true}
@@ -84,15 +77,12 @@ class index extends Component {
                                     </li>
                                 )
                                 }
-                            )
-                        }
+                            )}
                     </ul>
               </nav>
-
-
             </header>
-        );
+        )
     }
 }
 
-export default index;
+export default index

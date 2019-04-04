@@ -37,7 +37,7 @@ class index extends Component {
         }
         
         else if(name === 'email'){
-            if(value.length > 4 && 
+            if(value.length > 8 && 
                 value.includes('@') && 
                 value.includes('.')
             ){
@@ -77,14 +77,12 @@ class index extends Component {
     handleSubmit = e => {
         e.preventDefault()
         if(
-            //just topic input
             (
             this.state.namePassed === true &&
             this.state.emailPassed === true &&
             this.state.topicPassed === true &&
             this.state.messagePassed === true &&
             this.state.topic !== 'evaluation') ||
-            //subtopic && topic inputs
             (
             this.state.namePassed === true &&
             this.state.emailPassed === true &&
@@ -190,7 +188,7 @@ class index extends Component {
                 <h1>{this.props.title}</h1>
                 <form 
                     name="contact-form"
-                    className='contact__form'
+                    className={this.state.subtopic?'contact__form form__extended':'contact__form'}
                     action="/"
                 >
                     <input 
