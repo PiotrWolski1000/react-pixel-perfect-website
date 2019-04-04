@@ -3,7 +3,6 @@
 .pricing{
     width: 100%;
     height: auto;
-    padding-top: 25px;
 }
 
 .pricing__cards__wrapper{
@@ -55,7 +54,7 @@
         -webkit-text-fill-color: transparent;
         margin: 0;
         background-image: linear-gradient(to top, $salmon-dark, $salmon);
-        font-family: 'Open Sans';
+        font-family: $font1;
         text-transform: uppercase;
         font-weight: 800;
         font-style: normal;
@@ -63,7 +62,7 @@
         line-height: normal;
         letter-spacing: normal;
         margin-left: 20px;
-        transform: translateY(4px);
+        transform: translateY(0px);
         font-size: 28px;
     }
     
@@ -72,7 +71,7 @@
         text-transform: uppercase;
         transform: translateY(-4px);
     
-        font-family: "Open Sans";
+        font-family: $font1;
         font-size: 12px;
         font-weight: 600;
         font-style: normal;
@@ -88,7 +87,7 @@
 
 .card__top__right{
     margin-right: 20px;
-    font-family: "Open Sans";
+    font-family: $font1;
     font-style: bold;
     font-size: 40px;
 
@@ -129,7 +128,7 @@
     li {
         margin: 5px 0;
         padding: 5px  0;
-        font-family: "Open Sans";
+        font-family: $font1;
         font-size: 16px;
         font-weight: normal;
         font-style: normal;

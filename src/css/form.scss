@@ -1,6 +1,7 @@
 @import "./shared.scss";
 
 .contact {
+    clear: both;
     max-width: 942px; 
     margin: 0 auto;
     @media(max-width: 942px) {
@@ -22,7 +23,7 @@
     input, textarea, select, option {
         background-color: $inputs;
         border: none;
-        font-family: 'Open Sans';
+        font-family: $font1;
         font-size: 12px;
         font-weight: bold;
         font-style: normal;
