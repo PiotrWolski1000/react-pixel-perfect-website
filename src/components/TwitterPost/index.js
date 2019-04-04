@@ -9,7 +9,7 @@ class index extends React.Component{
             <section className="twitter">
                 <div className="twitter__wrapper">
                     <p className="twitter__last__post">
-                        Spent some time working on estabilishing a look and feel for our case studies, today!
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </p>
 
 
