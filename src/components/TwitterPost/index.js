@@ -14,7 +14,7 @@ class index extends React.Component{
 
 
                     <div className="twitter_time"> 
-                        <p>@buje-<span>4 Hours ago</span></p>
+                        <p>@cosa-<span>3 Hours ago</span></p>
         
                         <a href="/">
                             <div className="twitter_icon_wrapper">
