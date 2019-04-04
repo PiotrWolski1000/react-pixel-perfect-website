@@ -1,5 +1,5 @@
 ## Live Preview
-I'm using Netlify as continuous Git based deployment system service, [link to live preview.](https://buje-piotr-wolski.netlify.com)
+I'm using Netlify as continuous Git based deployment system service, [link to live preview.](https://cosa-piotr-wolski.netlify.com)
 
 ## Available Scripts
 
